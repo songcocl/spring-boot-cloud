@@ -29,4 +29,4 @@ zuul:
       sensitiveHeaders:
     svcb-service:
       path: /svcb/**
-      sensitiveHeaders:
+      sensitiveHeaders: 
