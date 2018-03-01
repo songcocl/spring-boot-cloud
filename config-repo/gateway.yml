@@ -20,13 +20,10 @@ ribbon:
 zuul:
   ignoredServices: '*'
   routes:
-    auth-service:
+    amcloud-authservice:
       path: /uaa/**
       stripPrefix: false
       sensitiveHeaders:
-    svca-service:
-      path: /svca/**
-      sensitiveHeaders:
-    svcb-service:
-      path: /svcb/**
+    amcloud-admin:
+      path: /api/admin/**
       sensitiveHeaders: 
