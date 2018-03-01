@@ -22,3 +22,11 @@ spring:
     password: fdauto
   jpa:
     show-sql: true
+
+security: 
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      grant-type: password
+      scope: read write
