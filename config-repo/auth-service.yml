@@ -28,5 +28,6 @@ security:
     client:
       clientId: client
       clientSecret: secret
+      accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: password
       scope: read write
