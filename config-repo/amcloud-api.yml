@@ -46,3 +46,6 @@ eureka:
 security:
   Basic: 
     enable: false
+management: 
+  security: 
+    enabled: false
