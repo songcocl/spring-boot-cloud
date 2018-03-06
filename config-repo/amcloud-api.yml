@@ -36,3 +36,9 @@ httpclient:
     connectTimeout: 5000
     connectRequestTimeout: 5000   
     socketTimeout: 10000
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: user
+      user.password: password
