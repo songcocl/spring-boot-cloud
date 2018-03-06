@@ -40,5 +40,9 @@ httpclient:
 eureka:
   instance:
     metadata-map:
-      user.name: user
-      user.password: password
+      user.name: ${security.user.name}
+      user.password: ${security.user.password}
+
+security:
+  Basic: 
+    enable: false
