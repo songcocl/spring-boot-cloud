@@ -23,7 +23,7 @@ zuul:
     amcloud-authservice:
       path: /uaa/**
       stripPrefix: false
-      serviceId: amcloud-authserivce
+      serviceId: amcloud-authservice
       sensitiveHeaders: 
     amcloud-admin:
       path: /admin/**
