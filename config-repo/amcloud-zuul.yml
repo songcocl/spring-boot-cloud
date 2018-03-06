@@ -25,7 +25,7 @@ zuul:
       stripPrefix: false
       sensitiveHeaders:
     amcloud-admin:
-      path: /api/admin/**
+      path: /admin/**
       sensitiveHeaders: 
     amcloud-api: 
       path: /api/**
