@@ -42,8 +42,3 @@ eureka:
     metadata-map:
       user.name: ${security.user.name}
       user.password: ${security.user.password}
-
-security:
-  user:
-    name: user
-    password: password
