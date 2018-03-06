@@ -27,3 +27,6 @@ zuul:
     amcloud-admin:
       path: /api/admin/**
       sensitiveHeaders: 
+    amcloud-api: 
+      path: /api/**
+      sensitiveHeaders: 
