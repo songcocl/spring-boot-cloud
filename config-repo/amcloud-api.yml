@@ -47,3 +47,6 @@ security:
   user:
     name: user
     password: password
+management: 
+  security: 
+    enabled: false
