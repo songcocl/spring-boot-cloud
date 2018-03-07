@@ -17,13 +17,13 @@ cxf:
 #ws
 ws: 
   equipservice:
-    resturl: http://localhost:${server.port}/api/rest/service
+    resturl: http://localhost:${server.port}/rest/service
   packservice:
-    resturl: http://localhost:${server.port}/api/rest/packservice
+    resturl: http://localhost:${server.port}/rest/packservice
   erpservice:
-    resturl: http://localhost:${server.port}/api/rest/erpservice
+    resturl: http://localhost:${server.port}/rest/erpservice
   wmsservice:
-    resturl: http://localhost:${server.port}/api/rest/wmsservice
+    resturl: http://localhost:${server.port}/rest/wmsservice
       
 #httpclient
 httpclient: 
