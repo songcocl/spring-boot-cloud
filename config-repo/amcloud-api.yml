@@ -19,11 +19,11 @@ ws:
   equipservice:
     resturl: http://localhost:8769/api/rest/service
   packservice:
-    resturl: http://localhost:${server.port}/rest/packservice
+    resturl: http://localhost:8769/api/rest/packservice
   erpservice:
-    resturl: http://localhost:${server.port}/rest/erpservice
+    resturl: http://localhost:8769/api/rest/erpservice
   wmsservice:
-    resturl: http://localhost:${server.port}/rest/wmsservice
+    resturl: http://localhost:8769/api/rest/wmsservice
       
 #httpclient
 httpclient: 
