@@ -20,7 +20,7 @@ ribbon:
 
 spring:
   rabbitmq:
-    host: 192.168.7.154
+    host: 127.0.0.1
   sleuth:
     sampler:
       percentage: 1
