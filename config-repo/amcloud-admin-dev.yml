@@ -23,5 +23,5 @@ security:
 spring:  
   data: 
     mongodb: 
-      uri: mongodb://bapuser:bapuser123@192.168.4.122:27017/amcloud
+      uri: mongodb://bapuser:bapuser123@192.168.4.121:27017/amcloud
       database: amcloud
