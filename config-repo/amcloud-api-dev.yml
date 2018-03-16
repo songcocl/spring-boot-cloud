@@ -1,0 +1,54 @@
+# Server
+server:
+  port: 8763
+ 
+#spring
+spring: 
+  data: 
+    mongodb: 
+      uri: mongodb://bapuser:bapuser123@192.168.4.122:27017/amcloud
+      database: amcloud
+
+#cxf
+
+cxf: 
+  path: /api/soap
+
+#ws
+ws: 
+  equipservice:
+    resturl: http://localhost:8769/api/rest/service
+  packservice:
+    resturl: http://localhost:8769/api/rest/packservice
+  erpservice:
+    resturl: http://localhost:8769/api/rest/erpservice
+  wmsservice:
+    resturl: http://localhost:8769/api/rest/wmsservice
+      
+#httpclient
+httpclient: 
+  config: 
+    proxy: false
+    proxyhost:
+    proxyPort: 8080
+    maxConnTotal: 10000  
+    maxPerRoute: 500  
+    connectTimeout: 5000
+    connectRequestTimeout: 5000   
+    socketTimeout: 10000
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${security.user.name}
+      user.password: ${security.user.password}
+
+security:
+  user:
+    name: user
+    password: password
+  basic: 
+    enabled: false
+management:
+  security:
+    enabled: false
