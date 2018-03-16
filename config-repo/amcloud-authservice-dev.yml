@@ -1,0 +1,21 @@
+server:
+  context-path: /uaa
+  port: 8767
+
+management:
+  security:
+    enabled: false
+  context-path: /mgmt
+
+eureka:
+  instance:
+    health-check-url-path: ${server.context-path}${management.context-path}/health
+    status-page-url-path: ${server.context-path}${management.context-path}/info
+    metadata-map:
+      management.context-path: ${server.context-path}${management.context-path}
+
+spring:
+  data: 
+    mongodb: 
+      uri: mongodb://bapuser:bapuser123@192.168.4.121:27017/amcloud
+      database: amcloud
