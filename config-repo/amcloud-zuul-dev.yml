@@ -1,0 +1,35 @@
+server:
+  port: 8769
+
+management:
+  security:
+    enabled: false
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    amcloud-authservice:
+      path: /uaa/**
+      stripPrefix: false
+      serviceId: amcloud-authservice
+      sensitiveHeaders: 
+    amcloud-admin:
+      path: /admin/**
+      serviceId: amcloud-admin
+      sensitiveHeaders: 
+    amcloud-api: 
+      path: /api/**
+      serviceId: amcloud-api
+      sensitiveHeaders: 
