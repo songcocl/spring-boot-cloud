@@ -33,3 +33,7 @@ zuul:
       path: /api/**
       serviceId: amcloud-api
       sensitiveHeaders: 
+    amcloud-sms: 
+      path: /sms/**
+      serviceId: amcloud-sms
+      sensitiveHeaders: 
