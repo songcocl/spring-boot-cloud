@@ -1,0 +1,27 @@
+# Server
+server:
+  port: 8766
+ 
+#spring
+spring: 
+  data: 
+    mongodb: 
+      uri: mongodb://bapuser:bapuser123@192.168.4.121:27017/amcloud
+      database: amcloud
+
+#eureka
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${security.user.name}
+      user.password: ${security.user.password}
+
+security:
+  user:
+    name: user
+    password: password
+  basic: 
+    enabled: false
+management:
+  security:
+    enabled: false
