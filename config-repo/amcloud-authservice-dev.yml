@@ -17,5 +17,5 @@ eureka:
 spring:
   data: 
     mongodb: 
-      uri: mongodb://bapuser:bapuser123@192.168.4.121:27017/amcloud
+      uri: mongodb://192.168.184.128:27017/amcloud
       database: amcloud
